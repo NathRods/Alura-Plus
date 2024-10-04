@@ -168,7 +168,7 @@ margin: 1em 0 2em 0;
     color: var(--cor-de-fundo);
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) { /* serve para que eu altere os valores quando chegar até um certo tamanho de tela Mobile */
     .container{
         display: block;
         background-image: none;
