@@ -151,7 +151,7 @@ margin: 1em 0 2em 0;
 }
 
 .rodape__texto{
-    color: var(--cinza-secundario);
+    color: var(--botao-azul);
     font-size: 14px;
     margin: 1em 18em;
 }
