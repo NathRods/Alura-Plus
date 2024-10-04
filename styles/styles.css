@@ -1,0 +1,170 @@
+:root{ /* Criando Variaves para utilizar em varias partes do projeto como as cores */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo:  #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito:#6085f4;
+
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal); /* serve para eu chamar qual tipo de fonte que vou utilizar no meu projeto*/
+    font-size: 16px; /* serve para determinar o tamanho da fonte*/
+    font-weight: 400; /* serve para determinar qual o peso da fonte */
+    color: var(--branco-principal); /* serve para determinar qual a cor dos textos*/
+}
+
+.texto_principal{
+    color: var(--branco-principal);
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.principal{
+    background-image: url("/assets/Background.png"); /* serve para criar um backgroud em forma de imagem e deve ser utilizada quando é um elemento fixo */
+    background-repeat: no-repeat; /* serve para que nao fique repetindo a imagem do backgroud como c fosse reflexo da imagem */
+    background-size: contain; /* serve para que a imagem de fundo seja visivel por completo mesmo que fique menor que proprio elemento*/
+    align-items: center; /* serve para que alinhar os itens dentro da coluna*/
+    text-align: center; /* serve para alinhar tudo que esta dentro de um elemento de bloco uma section*/
+}
+.container{
+    height: 100vh; /* serve para definir altura total da pagine utilizando 100% da pagina*/
+    display: grid; /* serve para determinar o tipo de apresentacao do site nesse caso grid*/
+    grid-template-columns: 50% 50%; /* serve para determinar o tamanho de cada coluna com 50%*/
+}
+
+.container__botao{
+    background-color: var(--botao-azul); /*serve para determinar a cor de fundo do botao */
+    color: var(--branco-principal);
+    border-radius: 5px; /* serve para determinar o tamanho da borda do botao*/
+    padding: 1em; /* serve para determinar o espacamento do item*/
+    display: block;
+    text-decoration: none; /* serve para que o texto nao tenha aquela linha abaixo do nome */
+    margin-bottom: 1em;
+   
+}
+
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.container__imagem {
+margin: 1em 0 2em 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.botao_secundario{
+    background-color: transparent; 
+    border: 2px solid var(--branco-principal);
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center; /* serve para alinhar os elementos de um container  */
+    list-style: none; /* serve para que o texto nao aquelas bolinhas de lista*/
+    margin: 5em 0; /* serve para determinar o tamanho da margem cime baixo e esquerda e direita*/
+   
+}
+
+.dispositivos{
+    text-align: center; 
+    font-family: var(--fonte-principal);
+    
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin-bottom: 5em;
+   
+}
+
+.rodape__lista{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1em 10px;
+    color: var(--branco-principal);
+}
+
+.lista__texto{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista__link{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    margin: 1em 10px;
+
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 1em 18em;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+.lista__link a:active{
+    color: red;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+
