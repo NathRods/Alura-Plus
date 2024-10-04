@@ -167,7 +167,7 @@ margin: 1em 0 2em 0;
     color: var(--cor-de-fundo);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .container{
         display: block;
         background-image: none;
